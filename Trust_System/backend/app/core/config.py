@@ -27,6 +27,7 @@ class Settings(BaseSettings):
     cors_origins: list[str] = Field(
         default_factory=lambda: [
             "http://localhost:3000",
+            "http://localhost:5173",
             "http://localhost:8000",
         ]
     )
@@ -34,7 +35,7 @@ class Settings(BaseSettings):
     aws_region: str = "ap-southeast-1"
     aws_s3_bucket: str = "trust-system-artifacts"
     aws_sqs_queue_url: str | None = None
-    bootstrap_admin_email: str | None = "admin@trustsystem.local"
+    bootstrap_admin_email: str | None = "admin@trustsystem.dev"
     bootstrap_admin_password: str | None = "AdminPassword123!"
     bootstrap_admin_full_name: str = "Trust System Admin"
 

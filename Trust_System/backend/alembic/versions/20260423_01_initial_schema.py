@@ -16,8 +16,20 @@ branch_labels: Sequence[str] | None = None
 depends_on: Sequence[str] | None = None
 
 
-user_role = sa.Enum("admin", "moderator", "user", name="userrole")
-report_status = sa.Enum("pending", "reviewed", "escalated", name="reportstatus")
+user_role = postgresql.ENUM(
+    "admin",
+    "moderator",
+    "user",
+    name="userrole",
+    create_type=False,
+)
+report_status = postgresql.ENUM(
+    "pending",
+    "reviewed",
+    "escalated",
+    name="reportstatus",
+    create_type=False,
+)
 
 
 def upgrade() -> None:
