@@ -1,0 +1,21 @@
+.env
+.env.local
+.env.*.local
+
+# Python
+backend/.venv/
+backend/.pytest_cache/
+backend/__pycache__/
+backend/**/*.pyc
+
+# Frontend
+frontend/.next/
+frontend/node_modules/
+
+# Data
+backend/storage/
+qdrant_storage/
+
+# Logs
+*.log
+

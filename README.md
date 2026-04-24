@@ -17,6 +17,7 @@ Each project lives in its own subdirectory and includes its own `README.md` with
 
 | Project        | Description                                                                          | Status  |
 | -------------- | ------------------------------------------------------------------------------------ | ------- |
+| `Local_Chatbot` | Full-stack LLM + RAG chatbot boilerplate with Next.js, FastAPI, LangGraph, and Qdrant. | Scaffolded |
 | `Trust_System` | Full-stack web application for building and experimenting with a trust-based system. | Planned |
 
 More projects will be added over time.
